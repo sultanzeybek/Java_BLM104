@@ -22,7 +22,7 @@ public class IscontainNumber {
         
         String[] words = myString.split(" ");
         for (String s : words) {
-         Matcher arama1 = desen.matcher(s);
+        Matcher arama1 = desen.matcher(s);
 
             while (arama1.find()) {                
                 counter++;
