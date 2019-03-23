@@ -89,7 +89,7 @@ public class Q4 extends javax.swing.JFrame {
                 
             } catch (Exception e) {
                 System.out.println(e.getClass() + ":" + e.getMessage());
-                Pattern p = Pattern.compile("[0-9]");
+                Pattern p = Pattern.compile("[0-9]+");
                 Matcher matcher = p.matcher(jTable1.getValueAt(i, 3).toString());
                 if(matcher.find()) {
                     jTable1.setValueAt(matcher.group(),i,3);
